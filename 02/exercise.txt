@@ -1,0 +1,10 @@
+Last login: Thu Sep 26 22:54:32 on ttys000
+zhujiaweis-MacBook-Pro:~ jacobzhu$ cd Desktop 
+zhujiaweis-MacBook-Pro:Desktop jacobzhu$ mkdir MH8811_02
+zhujiaweis-MacBook-Pro:Desktop jacobzhu$ cd MH8811_02
+zhujiaweis-MacBook-Pro:MH8811_02 jacobzhu$ touch 'my file'
+zhujiaweis-MacBook-Pro:MH8811_02 jacobzhu$ ls
+my file
+zhujiaweis-MacBook-Pro:MH8811_02 jacobzhu$ cd ..
+zhujiaweis-MacBook-Pro:Desktop jacobzhu$ rm -r MH8811_02
+zhujiaweis-MacBook-Pro:Desktop jacobzhu$ 
