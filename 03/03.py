@@ -26,7 +26,7 @@ while True:
     print('program 3: Convert temperature from Celsius to Fahrenheit ')
     
     #prompt user to choose
-    n= int(input('What sub-programs would you like to choose? (Just type 1,2 or 3):' ))
+    n= int(input('What sub-programs would you like to choose? (Just type 1,2,3 or other):' ))
     
     #run the chosen sub-programs
     if n==1:
@@ -38,6 +38,9 @@ while True:
     elif n==3:
         P02_02()
         print ('Thanks for your choosing, hope you enjoy the programs!')
+    else: 
+        print ('Done!')
+        break
 
 #What else can you make a function?
 #A lambda function: an anonymous function and can take many arguments
