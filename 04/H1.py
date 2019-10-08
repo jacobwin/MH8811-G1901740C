@@ -58,11 +58,11 @@ def getFilelines(fname):
 
 data = getFilelines('/Users/jacobzhu/Desktop/MH8811-04-Data.csv')
 
-print('Min', my_min(data))
-print('Max', my_max(data))
-print('Average', my_average(data))
-print('Median', my_median(data))
-print('Range',my_range(data))
+print('Min:', my_min(data))
+print('Max:', my_max(data))
+print('Average:', my_average(data))
+print('Median:', my_median(data))
+print('Range:',my_range(data))
 
 #------------------------------------------------------------------
 y=sum(data)
@@ -75,6 +75,6 @@ for x in data:
     total_sum +=(x-mean)**2
     sample_variance = (total_sum)/(len(data)-1)
 
-print('Sample variance', sample_variance)
+print('Sample variance:', sample_variance)
 
     
