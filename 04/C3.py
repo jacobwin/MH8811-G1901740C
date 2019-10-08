@@ -60,10 +60,10 @@ def getFilelines(data):
 
 data = getFilelines('/Users/jacobzhu/Desktop/MH8811-04-Data.csv')
 
-print('Min', my_min(data))
-print('Max', my_max(data))
-print('Average', my_average(data))
-print('Median', my_median(data))
-print('Range',my_range(data))
+print('Min:', my_min(data))
+print('Max:', my_max(data))
+print('Average:', my_average(data))
+print('Median:', my_median(data))
+print('Range:',my_range(data))
 
 

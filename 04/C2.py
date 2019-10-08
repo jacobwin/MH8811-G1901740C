@@ -11,7 +11,7 @@ def my_min(lst):
     return smallest_so_far
 
 print(lst)
-print(my_min(lst))
+print('Min:',my_min(lst))
 
 def my_max(lst):
     largest_so_far=None 
@@ -24,7 +24,7 @@ def my_max(lst):
     return largest_so_far
 
 print(lst)
-print (my_max(lst))
+print ('Max:',my_max(lst))
 
 def my_average(lst):
     sum=0
@@ -34,7 +34,7 @@ def my_average(lst):
     return avg
 
 print(lst)
-print(my_average(lst))
+print('Average:',my_average(lst))
 
 def my_median(lst):
     lst.sort()
@@ -47,14 +47,14 @@ def my_median(lst):
     return median 
 
 print(lst)
-print(my_median(lst))
+print('Medain:',my_median(lst))
 
 def my_range(lst):
     range=(my_max(lst))-(my_min(lst))
     return range
 
 print(lst)
-print(my_range(lst))
+print('Range:',my_range(lst))
 
 
 
