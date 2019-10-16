@@ -1,52 +1,52 @@
 import json
-#function for open the file
-def open_file(fname):
-    fh=open(fname)
+###define a function to open the file
+def open_file(filename):
+    fh=open(filename)
     data=json.load(fh)
     fh.close()
     return data
     
 
-#function for serialize
+###define a function to serialize
 def serialize(l):
     s=json.dumps(l)
     return s
 
- #input files       
-filename=input('H1-1.json,H1-2.json,H1-3.json,H1-4.json or H1-5.json?')
+ ###input files       
+filename=input('H1-1.json,H1-2.json,H1-3.json,H1-4.json or H1-5.json')
 
-#Load the json file
-d1=op_f(filename)
+###Load the json files
+d1=open_file(filename)
 print(d1)
 print(type(d1))
 print('Success!')
     
-#Convert the data into string
+###Convert data type into string
 s=serialize(d1)
 print(type(s)) 
 
-#Write the sting to the file
+
 filename1=input('what will be the name of the new file?')
-with open(filename1,'w') as f_w:
-    json.dump(s,f_w)
-    f_w.close()
+with open(filename1,'w') as f1:
+    json.dump(s,f1)
+    f1.close()
     print('Success!')
 
-#Read the string
-with open(filename1) as f_r:
-       d2=json.load(f_r)
-       f_r.close()
+###Read the string
+with open(filename1) as f2:
+       d2=json.load(f2)
+       f2.close()
 print(d2)
 print(type(d2))
 print('Success!')
 
-#To deserialization function
+###Deserialization function
 d2=json.loads(d2)
 print(d2)
 print(type(d2))
 
-#function for comparison
-def my_compare(d1,d2):
+###Define a function for comparison
+def compare(d1,d2):
     if type(d1) == type(d2):
         if type(d1) == type([]):
             print(diff_lst(d1,d2))
@@ -55,7 +55,7 @@ def my_compare(d1,d2):
     else:
         return False
 
-#function for compare the list
+###define a function to compare the list
 def diff_lst(d1,d2):
     if len(d1) == 0:
         return True
@@ -72,7 +72,7 @@ def diff_lst(d1,d2):
 
     return True
 
-#function for comapre the dict
+###define a function to comapre the dict
 def diff_dict(d1,d2):
     if d1 and d2: 
        for k in set(d1) or set(d2): 
@@ -87,4 +87,4 @@ def diff_dict(d1,d2):
         return False
 
 
-my_compare(d1,d2)
+compare(d1,d2)
