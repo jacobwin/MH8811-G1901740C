@@ -13,24 +13,24 @@ def serialize(l):
     return s
 
  ###input files       
-filename=input('H1-1.json,H1-2.json,H1-3.json,H1-4.json or H1-5.json')
+filename=input(' We have H1-1.json,H1-2.json,H1-3.json,H1-4.json or H1-5.json files, choose the one you like:')
 
 ###Load the json files
 d1=open_file(filename)
 print(d1)
 print(type(d1))
-print('Success!')
+print('Well Done!')
     
 ###Convert data type into string
 s=serialize(d1)
 print(type(s)) 
 
 
-filename1=input('what will be the name of the new file?')
+filename1=input('what‘s the name of the new file?')
 with open(filename1,'w') as f1:
     json.dump(s,f1)
     f1.close()
-    print('Success!')
+    print('Well Done!')
 
 ###Read the string
 with open(filename1) as f2:
@@ -38,7 +38,7 @@ with open(filename1) as f2:
        f2.close()
 print(d2)
 print(type(d2))
-print('Success!')
+print('Well Done!')
 
 ###Deserialization function
 d2=json.loads(d2)
