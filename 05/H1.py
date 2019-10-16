@@ -43,7 +43,7 @@ print('Well Done!')
 ###Deserialization function
 d2=json.loads(d2)
 print(d2)
-print(type(d2))
+print(type(d2)) 
 
 ###Define a function for comparison
 def compare(d1,d2):
