@@ -27,5 +27,8 @@ def genPassword(n):
 
     return(pwd)
 
+if __name__== '__main__' : 
+    print(genPassword)
+
  
 
